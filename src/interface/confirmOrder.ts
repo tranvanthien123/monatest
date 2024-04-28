@@ -1,0 +1,3 @@
+interface confirmOrder { 
+    value: any;
+}
