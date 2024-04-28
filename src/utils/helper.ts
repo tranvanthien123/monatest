@@ -1,7 +1,7 @@
 //format number
 const roundNumber = (value: number|string) => {
     let replace:number|string = value
-    if(value !== '') {
+    if(value && value !== '') {
         replace = value.toString().replace(/[^0-9]/g,'')
         replace = parseFloat(replace)
         replace = replace.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
