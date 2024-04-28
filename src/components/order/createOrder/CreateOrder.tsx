@@ -71,7 +71,9 @@ const CreateOrder = ({onSetShowCart, listProduct, listCartItems, onSetListCartIt
         setStepOder(2)
         dispatch(setLoading(false))
       }, 1000);
+      return
     }
+    alert('Vui lòng thêm sản phẩm vào giỏ hàng!')
   };
   const handleSetStepOrder = (step:number) => {
     setStepOder(step)
